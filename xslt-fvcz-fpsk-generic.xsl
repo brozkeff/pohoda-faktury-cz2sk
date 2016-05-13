@@ -135,4 +135,7 @@
 <!-- ve shrnuti jsou udaje o mene a celkove castce zbytecne a neplatne, SK Pohoda si polozky secte sama -->
 <xsl:template match="inv:invoiceSummary/inv:foreignCurrency"/>
 
+<!-- sekce stockItem se jevi nadbytecna, kdyz se jako skladova polozka paruje i ta co to vubec neobsahuje, fix issue 1 -->
+<xsl:template match="inv:stockItem"/>
+
 </xsl:stylesheet>
